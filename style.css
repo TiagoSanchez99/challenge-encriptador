@@ -1,0 +1,207 @@
+html{
+    height: 100%;
+    width: auto;
+    min-width: 481px;
+}
+
+*{
+    background-color: #757FB2;
+    color: #FFFFFF;
+    font-family: 'Monserrat';
+    font-size: 32px;
+}
+
+header{
+    margin-top: 10px;
+}
+
+.oracle{
+    height: 48px;
+    width: 389px;
+}
+
+.text-area {
+    height: 400px;
+    border:none;
+    color: #FFFFFF;
+    margin-top: 30px;
+    padding: 2px;
+}
+
+::placeholder { color: #FFFFFF;}
+
+.text-area:focus {
+      outline: none;
+}
+
+.mensaje{
+    height: 600px;
+    background: #AAB2D5;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background: #09ECEC;
+    color: black;
+    border-radius: 24px;
+    border-color: #09ECEC;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #09ECEC;
+    color: black;
+    border-color: #09ECEC;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar{
+    box-sizing: border-box;
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 24px;
+    gap: 8px;
+
+    background: rgba(255, 255, 255, 0.3);
+    border: 5px solid #09ECEC;
+    border-radius: 24px;
+    color: black;
+    cursor: pointer;
+
+    position:absolute;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    bottom: 100px;
+
+}
+
+.copiar:active{
+    background-color: greenyellow;
+}
+
+.ingresotexto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+}
+
+.salidatexto{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    left: 1000px;
+    top: 40px;
+
+    /* Light blue/light-blue-400 */
+
+    background: #AAB2D5;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+footer{
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 1450px;
+    top: 550px;
+    text-align: center;
+    font-size: 30px;
+}
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+/* En la clase corazon vamos a llamar latidos en la animación  */
+.corazon {
+	display: inline-block;
+	font-size: 30px;
+	text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+	color: white;
+	animation: latidos .5s infinite;
+	transform-origin: right;
+}
+
+@media screen and (max-width:480px){
+
+    .oracle{
+        display: none;
+    }
+
+    .alura{
+        height: 20px;
+        width: auto;
+    }
+
+    .salidatexto{
+        position: absolute;
+        width: 500px;
+        height: 700px;
+        left: 20px;
+        top: 700px;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .ingresotexto{
+        position: absolute;
+        width: 500px;
+        height: 700px;
+        left: 20px;
+        top: 100px;
+        font-size: 20px;
+        margin: 5px 0px 0px 0px;    
+    }
+
+    .mensaje{
+        width: 450px;
+        position: relative;
+        left: 20px;
+        top: 5px;
+    }
+
+    .copiar{
+        position: absolute;
+        left: 125px;
+        top: 1340px;
+    }
+
+    footer{
+            position: absolute;
+            width: 150px;
+            height: 18px;
+            left: 200px;
+            top: 1450px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+}
